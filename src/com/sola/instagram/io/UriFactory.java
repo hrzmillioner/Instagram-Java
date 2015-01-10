@@ -4,6 +4,7 @@ public class UriFactory {
 	public static final String API_ROOT = "https://api.instagram.com/v1";
 	
 	public class Users {
+		public static final String GET_SELF_DATA = UriFactory.API_ROOT + "/users/self";
 		public static final String GET_DATA = UriFactory.API_ROOT + "/users/{user_id}";
 		public static final String GET_FEED = UriFactory.API_ROOT + "/users/self/feed";
 		public static final String GET_RECENT_MEDIA = UriFactory.API_ROOT + "/users/{user_id}/media/recent";
@@ -24,25 +25,25 @@ public class UriFactory {
 		public static final String SEARCH_MEDIA = UriFactory.API_ROOT + "/media/search";
 		public static final String GET_POPULAR_MEDIA = UriFactory.API_ROOT + "/media/popular";
 	}
-
+	
 	public class Comments {
 		public static final String GET_MEDIA_COMMENTS = UriFactory.API_ROOT + "/media/{media_id}/comments";
 		public static final String POST_MEDIA_COMMENT = UriFactory.API_ROOT + "/media/{media_id}/comments";
 		public static final String DELETE_MEDIA_COMMENT = UriFactory.API_ROOT + "/media/{media_id}/comments/{comment_id}";
 	}
-
+	
 	public class Likes {
 		public static final String GET_LIKERS = UriFactory.API_ROOT + "/media/{media_id}/likes";
 		public static final String SET_LIKE = UriFactory.API_ROOT + "/media/{media_id}/likes";
 		public static final String REMOVE_LIKE = UriFactory.API_ROOT + "/media/{media_id}/likes";
 	}
-
+	
 	public class Tags {
 		public static final String GET_TAG = UriFactory.API_ROOT + "/tags/{tag_name}";
 		public static final String GET_RECENT_TAGED_MEDIA = UriFactory.API_ROOT + "/tags/{tag_name}/media/recent";
 		public static final String SEARCH_TAGS = UriFactory.API_ROOT + "/tags/search";
 	}
-
+	
 	public class Locations {
 		public static final String GET_LOCATION = UriFactory.API_ROOT + "/locations/{location_id}";
 		public static final String GET_MEDIA_FROM_LOCATION = UriFactory.API_ROOT + "/locations/{location_id}/media/recent";
